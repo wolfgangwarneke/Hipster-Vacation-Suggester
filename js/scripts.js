@@ -7,6 +7,7 @@ var canPedalUphill = true;
 var justBeer = true;
 var knowsHuxley = true;
 
+
 var destination;
 var getDestination = function(foo) {
   switch (foo) {
@@ -50,7 +51,9 @@ var getDestination = function(foo) {
 }
 
 
+var runQuiz = function() {
 
+}
 
 
 

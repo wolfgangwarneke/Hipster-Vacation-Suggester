@@ -1,0 +1,47 @@
+var hipsterQuestion = {
+  question: "Are you a hipster?",
+  affirmative: "Oh ya, totes.",
+  negative: "Um, chuh, no."
+}
+
+var starbucksQuestion = {
+  question: "Do you like Starbucks?",
+  affirmative: "Why yes I do!",
+  negative: "Um... are you being serious right now?"
+}
+
+var networkingQuestion = {
+  question: "Is 'networking' one of your pastimes?",
+  affirmative: "Ya.  Oh hey, I've gotta take this, brb.",
+  negative: "Um, is that like with computers?"
+}
+
+var cantEvenQuestion = {
+  question: "When you're getting frustrated, do you ever just \"can't even\"?",
+  affirmative: "Ya, bae. When things are cray cray and not in a good way.",
+  negative: "If you can't stand the heat, get out of the pizzeria."
+}
+
+var bicycleQuestion = {
+  question: "Do you like to ride your bi-cy-le?",
+  affirmative: "Yep.",
+  negative: "I prefer to take the subway or Uber everywhere."
+}
+
+var uphillQuestion = {
+  question: "Can you handle biking uphill?",
+  affirmative: "Yeah!",
+  negative: "No way, not with fixed gears."
+}
+
+var beerQuestion = {
+  question: "Do you love beer and sunshine, or just beer?",
+  affirmative: "Beer me. Wait, what's sunshine?",
+  negative: "Both of course!"
+}
+
+var huxleyQuestion = {
+  question: "Do you know who Aldous Huxley is?",
+  affirmative: "The Doors of Perception man.",
+  negative: "Wasn't he the headmaster at Hogwarts?"
+}
