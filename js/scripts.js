@@ -1,7 +1,7 @@
 var storesAnswer;
 var caseNumber;
-var beginFlag = false;
 var conditionalsTester;
+var userName;
 
 var destination;
 var getDestination = function(foo) {
@@ -65,10 +65,15 @@ var answerProtocol = function(whichQuestion) {
     }
     getDestination(caseNumber);
     if ( typeof destination === "string") {
-      alert(destination);//will go to ending string
+      $('.quiz, #result').toggleClass("hidden");
+      if (userName) {
+        $('.username').text(userName.toUpperCase());
+      } else {
+        $('.username').text('BROSEF');
+      }
+
     } else {
       nextClear();
-      beginFlag = true;
     }
     $('.answering').off("click");
   });

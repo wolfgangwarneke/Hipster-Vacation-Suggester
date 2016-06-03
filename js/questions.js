@@ -53,3 +53,50 @@ var huxleyQuestion = {
   negative: "Wasn't he the headmaster at Hogwarts?",
   cases: 4
 }
+
+
+// Destination City Data
+var austin = {
+  fullname: "Austin, Texas",
+  abrv: "ATX",
+  activities: []
+};
+
+var brooklyn = {
+  fullname: "Austin, Texas",
+  abrv: "BKLYN",
+  activities: []
+};
+
+var losangeles = {
+  fullname: "Austin, Texas",
+  abrv: "LAX",
+  activities: []
+};
+
+var portland = {
+  fullname: "Austin, Texas",
+  abrv: "PDX",
+  activities: []
+};
+
+var sanfransisco = {
+  fullname: "Austin, Texas",
+  abrv: "SFO",
+  activities: []
+};
+
+var seattle = {
+  fullname: "Austin, Texas",
+  abrv: "SEA",
+  activities: []
+};
+
+var allCityData = {
+  'Austin': austin,
+  'Brooklyn': brooklyn,
+  'Los Angeles': losangeles,
+  'Portland': portland,
+  'San Fransisco': sanfransisco,
+  'Seattle': seattle
+}

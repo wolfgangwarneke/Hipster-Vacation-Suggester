@@ -15,3 +15,7 @@
     min-width: 30vw;
     min-height: 30vw;
 }
+
+#hidden {
+  display: none;
+}
