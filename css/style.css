@@ -19,3 +19,11 @@
 #hidden {
   display: none;
 }
+
+#abbreviation {
+  font-size: 30vw;
+}
+
+body {
+  text-align: center;
+}

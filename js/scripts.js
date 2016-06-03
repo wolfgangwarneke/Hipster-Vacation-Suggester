@@ -1,7 +1,8 @@
+var userName = prompt("Yo okay suuu', what's your name?")
 var storesAnswer;
 var caseNumber;
 var conditionalsTester;
-var userName;
+var abrv;
 
 var destination;
 var getDestination = function(foo) {
@@ -49,6 +50,31 @@ var nextClear = function() {
   $('#negativeresponse').empty();
 }
 
+var result;
+var imgpath;
+var findCityData = function(city) {
+  var city = city;
+  if (city === "Austin") {
+    result = "ATX";
+    imgpath = "img/atx.jpg";
+  } else if (city === "Brooklyn") {
+    result = "BKLYN";
+    imgpath = "img/bklyn.jpg";
+  } else if (city === "Los Angeles") {
+    result = "LAX";
+    imgpath = "img/lax.jpg";
+  } else if (city === "Portland") {
+    result = "PDX";
+    imgpath = "img/pdx.jpg";
+  } else if (city === "San Fransisco") {
+    result = "SFO";
+    imgpath = "img/sfo.jpg";
+  } else {
+    result = "SEA";
+    imgpath = "img/sea.jpg";
+  }
+}
+
 var currentQuestionLoader = function(whichQuestion) {
   storesAnswer = null;//resets
   $('#questionbar').html("<h1>"+whichQuestion.question+"</h1>");
@@ -66,12 +92,17 @@ var answerProtocol = function(whichQuestion) {
     getDestination(caseNumber);
     if ( typeof destination === "string") {
       $('.quiz, #result').toggleClass("hidden");
+      //beginning of destination page content
       if (userName) {
         $('.username').text(userName.toUpperCase());
       } else {
         $('.username').text('BROSEF');
       }
-
+      findCityData(destination);
+      $('#result').append("<h1 id='abbreviation'>"+ result +"</h1>");
+      $('*').css("background", "none").css("color", "#ffdddd");
+      $('html').css("background", "url('" + imgpath + "') no-repeat center center fixed").css("background-size", "cover");
+      //end of destination page content
     } else {
       nextClear();
     }

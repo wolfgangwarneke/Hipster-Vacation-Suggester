@@ -56,47 +56,12 @@ var huxleyQuestion = {
 
 
 // Destination City Data
-var austin = {
-  fullname: "Austin, Texas",
-  abrv: "ATX",
-  activities: []
-};
-
-var brooklyn = {
-  fullname: "Austin, Texas",
-  abrv: "BKLYN",
-  activities: []
-};
-
-var losangeles = {
-  fullname: "Austin, Texas",
-  abrv: "LAX",
-  activities: []
-};
-
-var portland = {
-  fullname: "Austin, Texas",
-  abrv: "PDX",
-  activities: []
-};
-
-var sanfransisco = {
-  fullname: "Austin, Texas",
-  abrv: "SFO",
-  activities: []
-};
-
-var seattle = {
-  fullname: "Austin, Texas",
-  abrv: "SEA",
-  activities: []
-};
-
-var allCityData = {
-  'Austin': austin,
-  'Brooklyn': brooklyn,
-  'Los Angeles': losangeles,
-  'Portland': portland,
-  'San Fransisco': sanfransisco,
-  'Seattle': seattle
-}
+// IN PROGRESS !!!!!! THIS MAY END UP BEING IRRELEVANT
+// var allCityData = {
+//   'Austin': {fullname: "Austin, Texas", abrv: "ATX", activities: []},
+//   'Brooklyn': {fullname: "Brooklyn, NYC, New York", abrv: "BKLYN", activities: []},
+//   'Los Angeles': {fullname: "Los Angeles, California", abrv: "PDX", activities: []},
+//   'Portland': {fullname: "Portland, Oregon", abrv: "PDX", activities: []},
+//   'San Fransisco': {fullname: "San Fransisco, California", abrv: "SFO", activities: []},
+//   'Seattle': {fullname: "Seattle, Washington", abrv: "SEA",activities: []}
+// }
