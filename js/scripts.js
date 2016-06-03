@@ -1,13 +1,3 @@
-var isHipster;
-var likesStarbucks;
-var networks;
-var cantEven;
-var likesToRide;
-var canPedalUphill;
-var justBeer;
-var knowsHuxley;
-var forSwitch = [isHipster, likesStarbucks, networks, cantEven, likesToRide, canPedalUphill, justBeer, knowsHuxley];
-
 var storesAnswer;
 var caseNumber;
 var beginFlag = false;
