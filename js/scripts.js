@@ -10,6 +10,8 @@ var forSwitch = [isHipster, likesStarbucks, networks, cantEven, likesToRide, can
 
 var storesAnswer;
 var caseNumber;
+var beginFlag = false;
+var conditionalsTester;
 
 var destination;
 var getDestination = function(foo) {
@@ -20,36 +22,34 @@ var getDestination = function(foo) {
         }
         break;
     case 1:
-        if (networks) {
-          if (cantEven) {
+          if (storesAnswer) {
             destination = "Los Angeles";
           } else {
             destination = "Brooklyn";
           }
-        }
-        break;
+          break;
     case 2:
-        if (!likesToRide) {
+        if (!storesAnswer) {
           destination = "Brooklyn";
         }
         break;
 // if (!canPedalUphill) exists elsewhere
     case 3:
-        if (justBeer) {
+        if (storesAnswer) {
           destination = "Portland";
         } else {
           destination = "Austin";
         }
         break;
     case 4:
-        if (knowsHuxley) {
+        if (storesAnswer) {
           destination = "San Fransisco";
         } else {
           destination = "Seattle";
         }
         break;
-    default:
-        console.log('no destination yet');
+    case 5:
+        conditionalsTester = storesAnswer;
   }
 }
 
@@ -73,39 +73,59 @@ var answerProtocol = function(whichQuestion) {
     } else {
       storesAnswer = false;
     }
-    whichQuestion.varIndex = storesAnswer;
-    console.log(storesAnswer);//delete this later
-    console.log(whichQuestion.varIndex);
     getDestination(caseNumber);
     if ( typeof destination === "string") {
       alert(destination);//will go to ending string
     } else {
       nextClear();
+      beginFlag = true;
     }
     $('.answering').off("click");
   });
 }
 
-var runQuiz = function() {
-  currentQuestionLoader(hipsterQuestion);
-  answerProtocol(hipsterQuestion);
 
 
-
-}
-
-
+///begin TEST
 ////beginning
 $(document).ready(function(){
+  $('#questionbar').one("click", function() {
+    currentQuestionLoader(hipsterQuestion);
+    answerProtocol(hipsterQuestion);
     $('#questionbar').one("click", function() {
-      runQuiz();
+      currentQuestionLoader(starbucksQuestion);
+      answerProtocol(starbucksQuestion);
+      $('#questionbar').one("click", function() {
+        currentQuestionLoader(networkingQuestion);
+        answerProtocol(networkingQuestion);
+        if (storesAnswer) {
+          alert('success!');
+          $('#questionbar').one("click", function() {
+            currentQuestionLoader(cantEvenQuestion);
+            answerProtocol(cantEvenQuestion);
+          });
+        } else if (!storesAnswer) {
+          $('#questionbar').one("click", function() {
+            currentQuestionLoader(bicycleQuestion);
+            answerProtocol(bicycleQuestion);
+            $('#questionbar').one("click", function() {
+              currentQuestionLoader(uphillQuestion);
+              answerProtocol(uphillQuestion);
+              if (storesAnswer) {
+                $('#questionbar').one("click", function() {
+                  currentQuestionLoader(huxleyQuestion);
+                  answerProtocol(huxleyQuestion);
+                });
+              } else if (!storesAnswer) {
+                $('#questionbar').one("click", function() {
+                  currentQuestionLoader(beerQuestion);
+                  answerProtocol(beerQuestion);
+                });
+              }
+            });
+          });
+        }
+      });
     });
+  });
 });
-
-
-
-
-
-  // if (!canPedalUphill) {
-  //
-  // }
