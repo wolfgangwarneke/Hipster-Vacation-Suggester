@@ -1,19 +1,23 @@
 var hipsterQuestion = {
   question: "Are you a hipster?",
   affirmative: "Oh ya, totes.",
-  negative: "Um, chuh, no."
+  negative: "Um, chuh, no.",
+  cases: 0,
+  varIndex: 0
 }
 
 var starbucksQuestion = {
   question: "Do you like Starbucks?",
   affirmative: "Why yes I do!",
-  negative: "Um... are you being serious right now?"
+  negative: "Um... are you being serious right now?",
+  cases: 0
 }
 
 var networkingQuestion = {
   question: "Is 'networking' one of your pastimes?",
   affirmative: "Ya.  Oh hey, I've gotta take this, brb.",
-  negative: "Um, is that like with computers?"
+  negative: "Um, is that like with computers?",
+  cases: 1
 }
 
 var cantEvenQuestion = {

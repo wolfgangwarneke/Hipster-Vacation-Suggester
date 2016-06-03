@@ -15,8 +15,9 @@ var destination;
 var getDestination = function(foo) {
   switch (foo) {
     case 0:
-        if (storesAnswer) {
+        if (isHipster || likesStarbucks) {
           destination = "Seattle";
+          alert(destination);
         }
         break;
     case 1:
@@ -53,12 +54,6 @@ var getDestination = function(foo) {
   }
 }
 
-var nextClear = function() {
-  $('#questionbar').empty();
-  $('#affirmativeresponse').empty();
-  $('#negativeresponse').empty();
-}
-
 var currentQuestionLoader = function(whichQuestion) {
   storesAnswer = null;//resets
   $('#questionbar').html("<h1>"+whichQuestion.question+"</h1>");
@@ -67,7 +62,7 @@ var currentQuestionLoader = function(whichQuestion) {
   caseNumber = whichQuestion.cases;
 }
 var answerProtocol = function(whichQuestion) {
-  $('.answering').on("click", function() {
+  $('.answering').click(function() {
     if ($(this).attr('id') === "affirmativeresponse") {
       storesAnswer = true;
     } else {
@@ -78,11 +73,8 @@ var answerProtocol = function(whichQuestion) {
     console.log(whichQuestion.varIndex);
     getDestination(caseNumber);
     if ( typeof destination === "string") {
-      alert(destination);//will go to ending string
-    } else {
-      nextClear();
+      alert(destination);
     }
-    $('.answering').off("click");
   });
 }
 
@@ -97,7 +89,7 @@ var runQuiz = function() {
 
 ////beginning
 $(document).ready(function(){
-    $('#questionbar').one("click", function() {
+    $('#questionbar').click(function() {
       runQuiz();
     });
 });
