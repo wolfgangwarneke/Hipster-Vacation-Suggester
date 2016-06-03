@@ -6,7 +6,9 @@
 
 ## Description
 
-Sometimes hipsters like to go on vacation, but they might need a little help narrowing down their options. Should they go to Brooklyn, LA, San Fran, Austin, or Portland? Or maybe they'll really confused and end up going to Seattle.
+Sometimes hipsters like to go on vacation, but they might need a little help narrowing down their options. Should they go to Brooklyn, LA, San Fran, Austin, or Portland? Or maybe they'll really confused and end up going to Seattle! (Sorry Seattle, I think you maybe got it the hardest from me on this one...)
+
+Anyway, I made this silly quiz! Have fun.
 
 ## Setup/Installation Requirements
 

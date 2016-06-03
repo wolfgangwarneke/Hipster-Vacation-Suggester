@@ -100,7 +100,11 @@ var answerProtocol = function(whichQuestion) {
       }
       findCityData(destination);
       $('#result').append("<h1 id='abbreviation'>"+ result +"</h1>");
-      $('*').css("background", "none").css("color", "#ffdddd");
+      $('#result').append("<h2>is where you wanna go</h2><h1>VACAY!</h1>");
+      $('*').css("background", "none").css({
+          "color" : "#ffdddd",
+          "text-shadow" : "2px 2px 5px #000"
+      });
       $('html').css("background", "url('" + imgpath + "') no-repeat center center fixed").css("background-size", "cover");
       //end of destination page content
     } else {
