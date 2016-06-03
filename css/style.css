@@ -1,0 +1,17 @@
+#questionbar {
+    background-color: #bbb;
+    min-height: 30vw;
+    min-width: 60vw;
+}
+
+#affirmativeresponse {
+    background-color: #ddd;
+    min-width: 30vw;
+    min-height: 30vw;
+}
+
+#negativeresponse {
+    background-color: #ccc;
+    min-width: 30vw;
+    min-height: 30vw;
+}
