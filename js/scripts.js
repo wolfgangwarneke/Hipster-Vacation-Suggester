@@ -1,12 +1,13 @@
-var isHipster = true;
-var likesStarbucks = true;
-var networks = true;
-var cantEven = true;
-var likesToRide = true;
-var canPedalUphill = true;
-var justBeer = true;
-var knowsHuxley = true;
+var isHipster;
+var likesStarbucks;
+var networks;
+var cantEven;
+var likesToRide;
+var canPedalUphill;
+var justBeer;
+var knowsHuxley;
 
+var storesAnswer;
 
 var destination;
 var getDestination = function(foo) {
@@ -50,10 +51,33 @@ var getDestination = function(foo) {
   }
 }
 
+var currentQuestionLoader = function(whichQuestion) {
+  storesAnswer = null;//resets
+  $('#questionbar').html("<h1>"+whichQuestion.question+"</h1>");
+  $('#affirmativeresponse').html("<h2>"+whichQuestion.affirmative+"</h2>");
+  $('#negativeresponse').html("<h2>"+whichQuestion.negative+"</h2>");
+}
 
 var runQuiz = function() {
+  currentQuestionLoader(hipsterQuestion);
+  $('.answering').click(function() {
+    if ($(this).attr('id') === "affirmativeresponse") {
+      alert('working');
+    } else {
+      alert('also working');
+    }
+  });
 
 }
+
+
+////beginning
+$(document).ready(function(){
+    $('#questionbar').click(function() {
+      runQuiz();
+    });
+});
+
 
 
 
