@@ -98,33 +98,28 @@ $(document).ready(function(){
       $('#questionbar').one("click", function() {
         currentQuestionLoader(networkingQuestion);
         answerProtocol(networkingQuestion);
-        if (storesAnswer) {
-          alert('success!');
-          $('#questionbar').one("click", function() {
+        $('#questionbar').one("click", function() {
+          if (storesAnswer) {
             currentQuestionLoader(cantEvenQuestion);
             answerProtocol(cantEvenQuestion);
-          });
-        } else if (!storesAnswer) {
-          $('#questionbar').one("click", function() {
+          } else if (!storesAnswer) {
             currentQuestionLoader(bicycleQuestion);
             answerProtocol(bicycleQuestion);
             $('#questionbar').one("click", function() {
               currentQuestionLoader(uphillQuestion);
               answerProtocol(uphillQuestion);
-              if (storesAnswer) {
-                $('#questionbar').one("click", function() {
+              $('#questionbar').one("click", function() {
+                if (storesAnswer) {
                   currentQuestionLoader(huxleyQuestion);
                   answerProtocol(huxleyQuestion);
-                });
-              } else if (!storesAnswer) {
-                $('#questionbar').one("click", function() {
+                } else if (!storesAnswer) {
                   currentQuestionLoader(beerQuestion);
                   answerProtocol(beerQuestion);
-                });
-              }
+                }
+              });
             });
-          });
-        }
+          }
+        });
       });
     });
   });
