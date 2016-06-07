@@ -53,15 +53,3 @@ var huxleyQuestion = {
   negative: "Wasn't he the headmaster at Hogwarts?",
   cases: 4
 }
-
-
-// Destination City Data
-// IN PROGRESS !!!!!! THIS MAY END UP BEING IRRELEVANT
-// var allCityData = {
-//   'Austin': {fullname: "Austin, Texas", abrv: "ATX", activities: []},
-//   'Brooklyn': {fullname: "Brooklyn, NYC, New York", abrv: "BKLYN", activities: []},
-//   'Los Angeles': {fullname: "Los Angeles, California", abrv: "PDX", activities: []},
-//   'Portland': {fullname: "Portland, Oregon", abrv: "PDX", activities: []},
-//   'San Fransisco': {fullname: "San Fransisco, California", abrv: "SFO", activities: []},
-//   'Seattle': {fullname: "Seattle, Washington", abrv: "SEA",activities: []}
-// }

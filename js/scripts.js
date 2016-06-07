@@ -1,4 +1,3 @@
-var userName = prompt("Yo okay suuu', what's your name?")
 var storesAnswer;
 var caseNumber;
 var conditionalsTester;

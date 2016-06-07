@@ -5,17 +5,18 @@
     <title>Hipster Vacation Suggester</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/splash.js"></script>
     <script src="js/questions.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css"></link>
   </head>
   <body>
-    <div class="container">
+    <div class="hidden container" id="maincontain">
       <div class="row quiz">
         <div class="col-xs-12" id="instructions">
-          <h4>We'll let you know where you can go to exhaust your trustfund some more, just click through the questions!</h4>
-          <h3>Now be honest...</h3>
+          <h4>Click through and be true to yourself.  Or at least the self portrayed on social media.</h4>
+          <h5>You'll be Instagrammin hard in notime...</h5>
         </div>
       </div>
       <div class="row quiz">
@@ -31,6 +32,23 @@
       <div class="row hidden" id="result">
         <div class="col-xs-12">
           <h1>RESULTS ARE IN, <span class="username"></span>!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container hidden" id="splash">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h1>Welcome...</h1>
+          <h2>to the <em id="logo">Hipster Vacation Suggester</em></h2>
+          <h3>We're going help you decide where to go sublet a chill apartment for a bit so you can chill in a new city until you decide you're <em>over it.</em></h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 hidden" id="getname">
+          <h3>Trust me, breh.</h3>
+          <form>
+            <label for="username">So what's your name??</label>
+            <input type="text" val="" id="username">
+            <input type="submit" value="Let's go.">
+          </form>
         </div>
       </div>
     </div>
