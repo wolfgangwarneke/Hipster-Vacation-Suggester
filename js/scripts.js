@@ -44,7 +44,7 @@ var getDestination = function(foo) {
 }
 
 var nextClear = function() {
-  $('#questionbar').empty();
+  $('#questionbar').html("<H1>WHATEVER. NEXT QUESTION</H1>");
   $('#affirmativeresponse').empty();
   $('#negativeresponse').empty();
 }
